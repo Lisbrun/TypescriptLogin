@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "date": "2020-01-05",
+        "weather": "sunny",
+        "visibility": "great",
+        "comment": "An amazing science fiction book!"
+    },
+    {
+        "id": 2,
+        "date": "2020-02-15",
+        "weather": "cloudy",
+        "visibility": "poor",
+        "comment": "Not the best sci-fi book I've read"
+    },
+    {
+        "id": 3,
+        "date": "2020-03-20",
+        "weather": "rainy",
+        "visibility": "ok",
+        "comment": "A decent science fiction read"
+    },
+    {
+        "id": 4,
+        "date": "2020-04-10",
+        "weather": "windy",
+        "visibility": "good",
+        "comment": "One of my favorite sci-fi books of the year"
+    },
+    {
+        "id": 5,
+        "date": "2020-05-02",
+        "weather": "stormy",
+        "visibility": "poor",
+        "comment": "Couldn't really get into this science fiction book"
+    },
+    {
+        "id": 6,
+        "date": "2020-06-18",
+        "weather": "sunny",
+        "visibility": "great",
+        "comment": "A must-read for science fiction fans"
+    },
+    {
+        "id": 7,
+        "date": "2020-07-25",
+        "weather": "cloudy",
+        "visibility": "ok",
+        "comment": "Interesting concept but execution fell short"
+    },
+    {
+        "id": 8,
+        "date": "2020-08-14",
+        "weather": "rainy",
+        "visibility": "good",
+        "comment": "Enjoyable sci-fi adventure"
+    },
+    {
+        "id": 9,
+        "date": "2020-09-09",
+        "weather": "windy",
+        "visibility": "great",
+        "comment": "One of the best science fiction books I've read in a while"
+    },
+    {
+        "id": 10,
+        "date": "2020-10-30",
+        "weather": "sunny",
+        "visibility": "poor",
+        "comment": "Disappointing ending to an otherwise promising sci-fi story"
+    },
+    {
+        "id": 11,
+        "date": "2020-11-17",
+        "weather": "cloudy",
+        "visibility": "ok",
+        "comment": "A solid science fiction read"
+    },
+    {
+        "id": 12,
+        "date": "2020-12-22",
+        "weather": "rainy",
+        "visibility": "good",
+        "comment": "Intriguing plot with well-developed characters"
+    },
+    {
+        "id": 13,
+        "date": "2020-01-08",
+        "weather": "windy",
+        "visibility": "great",
+        "comment": "Sci-fi at its finest"
+    },
+    {
+        "id": 14,
+        "date": "2020-02-12",
+        "weather": "stormy",
+        "visibility": "poor",
+        "comment": "Not my cup of tea"
+    },
+    {
+        "id": 15,
+        "date": "2020-03-07",
+        "weather": "sunny",
+        "visibility": "ok",
+        "comment": "Decent science fiction book"
+    }
+]
