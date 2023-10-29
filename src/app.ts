@@ -7,10 +7,12 @@ const PORT = process.env.PORT ?? 1234
 
 declare module 'express-session' {
   interface SessionData {
-    loggedin: boolean
+    loggedin: false | true
     Username: string
   }
 }
+
+
 
 app.use(json())
 

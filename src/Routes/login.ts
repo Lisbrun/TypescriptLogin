@@ -1,9 +1,18 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
 import { Router } from 'express'
-import { getAllUsers, createUserController } from '../Controller/Controller'
+import {
+  getAllUsers,
+  createUserController,
+  loginUserController,
+  logoutUser
+} from '../Controller/Controller'
 
 export const routerLogin = Router()
 
 routerLogin.get('/login', getAllUsers)
 
-// eslint-disable-next-line @typescript-eslint/no-misused-promises
-routerLogin.post('/login', createUserController)
+routerLogin.post('/createUser', createUserController)
+
+routerLogin.post('/login', loginUserController)
+
+routerLogin.get('/logout', logoutUser)

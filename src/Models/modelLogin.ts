@@ -1,5 +1,5 @@
 import mysql, { Connection } from 'mysql2/promise'
-import bycript from 'bcryptjs'
+import bycript, { compare } from 'bcryptjs'
 import { RowDataPacket } from 'mysql2'
 interface userData {
   email: string
@@ -40,6 +40,26 @@ export const createUser = async (
       return rows
     } catch (e) {
       throw new Error('Error al crear usuario')
+    }
+  }
+}
+
+export const loginUser = async (userData: userData): Promise<boolean | undefined> => {
+  const { email, password } = userData
+  const connection = await connect()
+  if (connection !== null) {
+    const sql: string = 'select * from users where email = ?'
+    const [rows] = await connection.query<RowDataPacket[]>(sql, [email])
+    if (rows.length === 0) {
+      throw new Error('Error al logearse')
+    }
+    const user = rows[0]
+    const passwordBD = user.password
+    const resultLogin = await compare(password, passwordBD)
+    if (resultLogin) {
+      return await Promise.resolve(true)
+    } else {
+      return await Promise.resolve(false)
     }
   }
 }
