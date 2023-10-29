@@ -1,0 +1,12 @@
+### Get the users
+GET http://localhost:1234/login
+
+### Create Users 
+POST http://localhost:1234/login
+Content-Type: application/json
+
+{
+    "email": "jmedinaguerrero84777@gmail.com",
+    "password": "dsadadkofamfoafopwa",
+    "cedula":12345678910
+}
